@@ -1,32 +1,42 @@
 var food = [
     {
-        id: 1,
-        name: "Tôm",
-        code: "TC01345",
-        price: "250.000",
-        image: "https://images.squarespace-cdn.com/content/v1/53883795e4b016c956b8d243/1562815515627-WUI5RN2UL8UZPT1WLROY/chup-anh-mon-an-nha-hang-chuyen-nghiep-4.jpg",
-    },
-    {
-        id: 2,
-        name: "Cua",
-        code: "TC013442",
-        price: "550.000",
-        image: "https://kimlocphat.vn/upload/mon-an-ngon-02-23-09-2017-11-57-20.jpg",
-    },
-    {
-        id: 3,
-        name: "Thịt nướng",
-        code: "TC0134342",
-        price: "130.000",
-        image: "https://tourdanangcity.vn/wp-content/uploads/2020/09/Sky-View-Restaurant-nha-hang-da-nang-1.jpg",
-    },
-    {
-        id: 4,
-        name: "Beef steak",
-        code: "TC013324",
-        price: "250.000",
-        image: "https://tourdanangcity.vn/wp-content/uploads/2020/09/the-grill-nha-hang-da-nang-1.jpg",
-    },
+       id: 1,
+    name: "Bò sốt vang",
+    image: "https://i-giadinh.vnecdn.net/2021/12/10/Buoc-5-9470-1639110897.jpg",
+    price: "150.000",
+    madeIn: "Việt Nam",
+  },
+  {
+    id: 2,
+    name: "Bò Mỹ nướng mắm nhỉ",
+    image:
+      "https://job3s.vn/pictures/images_02_2024/bo-nuong-mam-nhi-5.png",
+    price: "350.000",
+    madeIn: "Mỹ",
+  },
+  {
+    id: 3,
+    name: "Cơm tấm",
+    image:
+      "https://cdn.nhathuoclongchau.com.vn/unsafe/800x0/filters:quality(95)/https://cms-prod.s3-sgn09.fptcloud.com/com_tam_bao_nhieu_calo_giam_can_an_com_tam_duoc_khong1_444305f50c.jpg",
+    price: "45.000",
+    madeIn: "Việt Nam",
+  },
+  {
+    id: 4,
+    name: "Bún Bò Huế",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Bun-Bo-Hue-from-Huong-Giang-2011.jpg/800px-Bun-Bo-Hue-from-Huong-Giang-2011.jpg",
+    price: "45.000",
+    madeIn: "Việt Nam",
+  },
+  {
+    id: 5,
+    name: "Mỳ Ý",
+    image:"https://www.cet.edu.vn/wp-content/uploads/2021/03/cach-lam-mi-y.jpg",
+    price: "70.000",
+    madeIn: "Đảo Sicily (Ý)",
+  },
 ];
     function listProducts() {
         var show = ''
@@ -109,8 +119,6 @@ var food = [
     }
     
     //admin
- 
-    
     
     function add_mon(id_mon,ten_mon,anh_mon,gia_mon,diadiem_mon,mota_mon){
         console.log(id_mon,ten_mon,anh_mon,gia_mon,diadiem_mon,mota_mon)
@@ -125,13 +133,13 @@ var food = [
                     var messenger = document.getElementById("messenger")
                     var text_messenger = document.getElementById("text_messenger")
                     messenger.style.height = '100vh'
-                    text_messenger.innerHTML = 'id món đã tồn tại'
+                    text_messenger.innerHTML = 'ID món đã tồn tại'
                     return  
                 }else if(ten_mon === items.Name){
                     var messenger = document.getElementById("messenger")
                     var text_messenger = document.getElementById("text_messenger")
                     messenger.style.height = '100vh'
-                    text_messenger.innerHTML = 'Tên món đã tồn tại'
+                    text_messenger.innerHTML = 'Tên món đã tồn tại!'
                 }
             })
             var Mon = {
